@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="index.css">
+  <!-- font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <!-- text effact -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+
+</head>
+
+<body>
+  <!-- sidenav -->
+  <section>
+
+    <div class="top_nav_css">
+      <div class="d-flex justify-content-between align-items-center bg-light ps-3 pe-3 pt-2 pb-2">
+        <div class="logo">
+          <h1>OII</h1>
+        </div>
+        <div class="float-end nav_on_button">
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"><i class="fa-solid fa-bars text-light"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="offcanvas offcanvas-start bg-light sidenav_css" data-bs-scroll="true" data-bs-backdrop="false"
+      tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+      <!-- logo -->
+      <div class="logo d-flex align-items-center justify-content-center pt-2 pb-2 sid_menu_logo">
+        <h1 class="fs-3 text-light">OII</h1>
+      </div>
+      <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+        <a id="HOME" class="text-center" href=""><i
+            class="fa-solid fa-house-chimney-crack"></i><br><span>HOME</span></a>
+
+      </div>
+      <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+        <a class="text-center" href="#ABOUTME"><i class="fa-regular fa-address-card"></i><br><span>ABOUT ME</span></a>
+
+      </div>
+      <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+        <a onclick="document.querySelector('#Services').scrollIntoView({behaviour:'smooth'});" class="text-center"><i
+            class="fa-solid fa-bell-concierge"></i><br><span>Services</span></a>
+
+      </div>
+      <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+        <a #Portfolio class="text-center" href=""><i class="fa-solid fa-briefcase"></i><br><span>Portfolio</span></a>
+
+      </div>
+      <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+        <a #Blog class="text-center" href=""><i class="fa-solid fa-blog"></i><br><span>Blog</span></a>
+
+      </div>
+      <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+        <a #Contact class="text-center" href=""><i class="fa-solid fa-file-signature"></i><br><span>Contact</span></a>
+
+      </div>
+    </div>
+  </section>
+  <section class="row">
+    <div class="col-lg-1">
+      <div style="height: 100%;" class="bg-light sidenav_css sid_bar_2 fixed-top">
+        <!-- logo -->
+        <div class="logo d-flex align-items-center justify-content-center pt-2 pb-2 sid_menu_logo">
+          <h1 class="fs-3 text-light">OII</h1>
+        </div>
+        <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+          <a class="text-center" href=""><i class="fa-solid fa-house-chimney-crack"></i><br><span>HOME</span></a>
+
+        </div>
+        <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+          <a class="text-center" href=""><i class="fa-regular fa-address-card"></i><br><span>ABOUT ME</span></a>
+
+        </div>
+        <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+          <a class="text-center" href=""><i class="fa-solid fa-bell-concierge"></i><br><span>Services</span></a>
+
+        </div>
+        <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+          <a class="text-center" href=""><i class="fa-solid fa-briefcase"></i><br><span>Portfolio</span></a>
+
+        </div>
+        <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+          <a class="text-center" href=""><i class="fa-solid fa-blog"></i><br><span>Blog</span></a>
+
+        </div>
+        <div class="d-flex align-items-center justify-content-center sid_menu_css pt-3 pb-3 border-bottom">
+          <a class="text-center" href=""><i class="fa-solid fa-file-signature"></i><br><span>Contact</span></a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="first_section_css">
+    <section class="container_css">
+      <section class="container">
+        <div class="row">
+          <div class="col-lg-6 first_content_css pt-3 pb-3">
+            <div id="HOME">
+              <h6>Hello there...</h6>
+              <h1>Emon Mollah</h1>
+              <div class="d-flex align-items-center mb-2">
+                <h2>I Am Passionate
+                  <span href="" class="typewrite" data-period="2000" data-type='[ "Developer.", "Designer."]'>
+                  </span>
+                </h2>
+                <span class="vr"></span>
+              </div>
+              <p>The namics of how users interact with interactive elements within a user interface flow chart based on
+                container proportion.</p>
+              <div class="work_button pt-2">
+                <a class="work_button_1" href="">MY WORK</a>
+                <a class="work_button_2" href="">HIRE ME</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+
+          </div>
+        </div>
+
+      </section>
+    </section>
+    <section>
+      <button class="next_button" href=""><span><i class="fa-solid fa-chevron-down"></i></span></button>
+    </section>
+  </section>
+  <section id="ABOUTME" class="container_css">
+    <div class="container ABOUT_ME_css">
+      <h3 class="">ABOUT ME</h3>
+      <p>A LEAD UX & UI DESIGNER BASED IN CANADA</p>
+      <div class="row align-items-center gx-5 mt-5">
+        <div class="col-lg-5">
+          <div class="ABOUT_ME_img_css position-relative">
+            <div class="social_icon bg-white">
+              <a class="social_icon_css" href=""><span><i class="fa-brands fa-facebook-f"></i></span></a>
+              <a class="social_icon_css" href=""><span><i class="fa-brands fa-twitter"></i></span></a>
+              <a class="social_icon_css" href=""><span><i class="fa-brands fa-instagram"></i></span></a>
+              <a class="social_icon_css" href=""><span><i class="fa-brands fa-linkedin-in"></i></span></a>
+            </div>
+            <img class="img-fluid" src="image/man/man 2.jpg" alt="">
+          </div>
+        </div>
+        <div class="col-lg-7 about_emon_css mt-3">
+          <h4>I'M Emon Mollah</h4>
+          <h6>A Lead <span style="color: #d9832e;">UX & UI</span> designer based in <span
+              style="color: #d9832e;">Canada</span></h6>
+          <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+            websites, web services and online stores. My passion is to design digital user experiences through the bold
+            interface and meaningful interactions. Check out my Portfolio</p>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="media">
+                <label>Birthday</label>
+                <p>23 september 2005</p>
+              </div>
+              <div class="media">
+                <label>Age</label>
+                <p>18 Yr</p>
+              </div>
+              <div class="media">
+                <label>Residence</label>
+                <p>Bangladesh</p>
+              </div>
+              <div class="media">
+                <label>Address</label>
+                <p>Gazipur, Dhaka</p>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="media">
+                <label>E-mail</label>
+                <p>oiiemon9@gmail.com</p>
+              </div>
+              <div class="media">
+                <label>Phone</label>
+                <p>018********</p>
+              </div>
+              <div class="media">
+                <label>Skype</label>
+                <p>****</p>
+              </div>
+              <div class="media">
+                <label>Freelance</label>
+                <p>Available</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="work_button mt-4">
+            <a class="work_button_1" href="">DOWNLOAD CV</a>
+          </div>
+
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section id="Services" class="MY_SKILLS_css">
+    <section class="container_css">
+      <div class="container MY_SKILLS">
+        <h3>MY SKILLS</h3>
+        <p>A LEAD UX & UI DESIGNER BASED IN CANADA</p>
+        <!-- Progress -->
+        <div class="row gx-5 mt-5">
+
+          <div class="col-lg-6">
+            <div class="skill-lt mb-4">
+              <h6 class="dark-color">HTML5</h6>
+              <div class="skill-bar">
+                <div class="skill-bar-in theme-bg" role="progressbar" aria-valuenow="92" aria-valuemin="0"
+                  aria-valuemax="100" style="width: 92%;"><span>92%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-lt mb-4">
+              <h6 class="dark-color">CSS3</h6>
+              <div class="skill-bar">
+                <div class="skill-bar-in theme-bg" role="progressbar" aria-valuenow="92" aria-valuemin="0"
+                  aria-valuemax="100" style="width: 98%;"><span>98%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-lt mb-4">
+              <h6 class="dark-color">Magento</h6>
+              <div class="skill-bar">
+                <div class="skill-bar-in theme-bg" role="progressbar" aria-valuenow="92" aria-valuemin="0"
+                  aria-valuemax="100" style="width: 78%;"><span>78%</span>
+                </div>
+              </div>
+            </div>
+            <div class="skill-lt mb-4">
+              <h6 class="dark-color">UI/UX</h6>
+              <div class="skill-bar">
+                <div class="skill-bar-in theme-bg" role="progressbar" aria-valuenow="92" aria-valuemin="0"
+                  aria-valuemax="100" style="width: 32%;"><span>32%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row gy-4">
+              <div class="col-6 col-sm-6 col-lg-6">
+                <div class="d-flex justify-content-center align-items-center rounded skill_box">
+                  <div class="icon">
+                    <i class="fas fa-compact-disc"></i>
+                  </div>
+                  <h5>80 Albumes Listened</h5>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-lg-6">
+                <div class="d-flex justify-content-center align-items-center rounded skill_box">
+                  <div class="icon">
+                    <i class="fas fa-trophy"></i>
+                  </div>
+                  <h5>15 Awards Won</h5>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-lg-6">
+                <div class="d-flex justify-content-center align-items-center rounded skill_box">
+                  <div class="icon">
+                    <i class="fas fa-mug-hot"></i>
+                  </div>
+                  <h5>1 000 Cups of coffee</h5>
+                </div>
+              </div>
+              <div class="col-6 col-sm-6 col-lg-6">
+                <div class="d-flex justify-content-center align-items-center rounded skill_box">
+                  <div class="icon">
+                    <i class="fas fa-flag"></i>
+                  </div>
+                  <h5>10 Countries Visited</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </section>
+  <section id="ABOUTME" class="container_css">
+    <div class="container ABOUT_ME_css">
+      <h3 class="">MY SERVICES</h3>
+      <p>A LEAD UX & UI DESIGNER BASED IN CANADA</p>
+      <div class="row gy-4 mt-5">
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 box-shadow-lg">
+            <div class="icon"><i class="fa-solid fa-display"></i></div>
+            <div class="feature-content">
+              <h5>Unique design</h5>
+              <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                websites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 box-shadow-lg">
+            <div class="icon"><i class="fa-solid fa-tags"></i></div>
+            <div class="feature-content">
+              <h5>Different Layout</h5>
+              <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                websites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 box-shadow-lg">
+            <div class="icon"><i class="fa-regular fa-comments"></i></div>
+            <div class="feature-content">
+              <h5>Make it Simple</h5>
+              <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                websites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 box-shadow-lg">
+            <div class="icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <div class="feature-content">
+              <h5>Responsiveness</h5>
+              <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                websites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 box-shadow-lg">
+            <div class="icon"><i class="fa-solid fa-bullseye"></i></div>
+            <div class="feature-content">
+              <h5>Testing for Perfection</h5>
+              <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                websites.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-box-1 box-shadow-lg">
+            <div class="icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+            <div class="feature-content">
+              <h5>Advanced Options</h5>
+              <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern
+                websites.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="Services" class="MY_SKILLS_css">
+    <section class="container_css">
+      <div class="container MY_SKILLS">
+        <div class="mb-5">
+          <h3>LATEST WORKS</h3>
+          <p>A LEAD UX & UI DESIGNER BASED IN CANADA</p>
+        </div>
+        <!-- Progress -->
+        <div class="row">
+          <div class="col-md-6 col-lg-4 product-item product branding">
+            <div class="Recent-posts-image">
+              <figure class="d-flex justify-content-center align-items-center rounded-4"><img
+                  src="image/leatst work/carlos-quintero-hAb_8YM2kJw-unsplash.jpg" class="img-fluid" alt="...">
+              </figure>
+              <div class="portfolio-info text-center">
+                <h5 class="fadeIn">Our Photography</h5><span>Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 product-item product branding">
+            <div class="Recent-posts-image">
+              <figure class="d-flex justify-content-center align-items-center rounded-4"><img
+                  src="image/leatst work/jonatan-lewczuk-J5wQl4Wqal8-unsplash.jpg" class="img-fluid" alt="...">
+              </figure>
+              <div class="portfolio-info text-center">
+                <h5 class="fadeIn">Our Photography</h5><span>Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 product-item product branding">
+            <div class="Recent-posts-image">
+              <figure class="d-flex justify-content-center align-items-center rounded-4"><img
+                  src="image/leatst work/joshua-earle-wFWQmOyfkkM-unsplash.jpg" class="img-fluid" alt="...">
+              </figure>
+              <div class="portfolio-info text-center">
+                <h5 class="fadeIn">Our Photography</h5><span>Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 product-item product branding">
+            <div class="Recent-posts-image">
+              <figure class="d-flex justify-content-center align-items-center rounded-4"><img
+                  src="image/leatst work/mick-haupt-kdsA7f3WmFQ-unsplash.jpg" class="img-fluid" alt="...">
+              </figure>
+              <div class="portfolio-info text-center">
+                <h5 class="fadeIn">Our Photography</h5><span>Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 product-item product branding">
+            <div class="Recent-posts-image">
+              <figure class="d-flex justify-content-center align-items-center rounded-4"><img
+                  src="image/leatst work/navid-sohrabi-gMnPY4Dv9wU-unsplash.jpg" class="img-fluid" alt="...">
+              </figure>
+              <div class="portfolio-info text-center">
+                <h5 class="fadeIn">Our Photography</h5><span>Design</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 product-item product branding">
+            <div class="Recent-posts-image">
+              <figure class="d-flex justify-content-center align-items-center rounded-4">
+                <img src="image/leatst work/vishnu-prasad-Mt5jVH-8tYo-unsplash.jpg" class="img-fluid" alt="...">
+              </figure>
+              <div class="portfolio-info text-center ">
+                <h5 class="fadeIn">Our Photography</h5><span>Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+  </section>
+  <!-- TESTIMONIALS -->
+  <section id="ABOUTME" class="container_css">
+    <div class="container ABOUT_ME_css">
+      <h3>TESTIMONIALS</h3>
+      <p>A LEAD UX & UI DESIGNER BASED IN CANADA</p>
+      <div class="mt-5">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Swiper slider JS -->
+            <div class="">
+              <swiper-container class="mySwiper row gx-2" space-between="5" slides-per-view="2" loop="true"
+                autoplay-delay="2500" autoplay-disable-on-interaction="false" init="false">
+                <swiper-slide class=" col-lg-6">
+                  <div class="card_slider_css">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img class="img-fluid People_image_css" src="image/People/aiony-haust-3TLl_97HNJo-unsplash.jpg"
+                          alt="">
+                      </div>
+                      <div class="col-lg-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quia at perferendis iusto
+                          tempora corporis quis iste, voluptate, similique ipsa fuga nam aspernatur, eaque labore
+                          deleniti rem nisi! Sint, ex?</p>
+                        <h5>Emon vhai</h5>
+                        <p>co-emon</p>
+                      </div>
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class=" col-lg-6">
+                  <div class="card_slider_css">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img class="img-fluid People_image_css" src="image/People/ivana-cajina-_7LbC5J-jw4-unsplash.jpg"
+                          alt="">
+                      </div>
+                      <div class="col-lg-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quia at perferendis iusto
+                          tempora corporis quis iste, voluptate, similique ipsa fuga nam aspernatur, eaque labore
+                          deleniti rem nisi! Sint, ex?</p>
+                        <h5>Emon vhai</h5>
+                        <p>co-emon</p>
+                      </div>
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class=" col-lg-6">
+                  <div class="card_slider_css">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img class="img-fluid People_image_css" src="image/People/rayul-_M6gy9oHgII-unsplash.jpg"
+                          alt="">
+                      </div>
+                      <div class="col-lg-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quia at perferendis iusto
+                          tempora corporis quis iste, voluptate, similique ipsa fuga nam aspernatur, eaque labore
+                          deleniti rem nisi! Sint, ex?</p>
+                        <h5>Emon vhai</h5>
+                        <p>co-emon</p>
+                      </div>
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide class=" col-lg-6">
+                  <div class="card_slider_css">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img class="img-fluid People_image_css" src="image/People/toa-heftiba-O3ymvT7Wf9U-unsplash.jpg"
+                          alt="">
+                      </div>
+                      <div class="col-lg-8">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quia at perferendis iusto
+                          tempora corporis quis iste, voluptate, similique ipsa fuga nam aspernatur, eaque labore
+                          deleniti rem nisi! Sint, ex?</p>
+                        <h5>Emon vhai</h5>
+                        <p>co-emon</p>
+                      </div>
+                    </div>
+                  </div>
+                </swiper-slide>
+              </swiper-container>
+            </div>
+          </div>
+          <div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <section id="Services" class="MY_SKILLS_css">
+    <section class="container_css">
+      <div class="container MY_SKILLS">
+        <div class="mb-5">
+          <h3 class="fade-in-left">LATEST BLOGS</h3>
+          <p>A LEAD UX & UI DESIGNER BASED IN CANADA</p>
+        </div>
+        <!-- Progress -->
+        <div class="row gy-3">
+          <div style="position:relative; height:450px;" class="col-12 col-sm-6 col-lg-4 LATEST_BLOGS">
+            <div class="laptop">
+              <img class="img-fluid" src="image/laptop/burst-kUqqaRjJuw0-unsplash (1).jpg" alt="">
+            </div>
+            <div class="designer_content_css">
+              <div style="position: relative; background-color: white; border: 0.25px solid aliceblue;">
+                <h6 class="laptop_date">02 Mar 2023</h6>
+                <div style="padding: 20px;">
+                  <span>Design</span>
+                  <a class="laptop" href="">Make your Marketing website</a>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a class="read_more_css" href="">READ MORE</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div style="position:relative; height:450px;" class="col-12 col-sm-6 col-lg-4 LATEST_BLOGS">
+            <div class="laptop">
+              <img class="img-fluid" src="image/laptop/ian-dooley-DJ7bWa-Gwks-unsplash.jpg" alt="">
+            </div>
+            <div class="designer_content_css">
+              <div style="position: relative; background-color: white; border: 0.25px solid aliceblue;">
+                <h6 class="laptop_date">02 Mar 2023</h6>
+                <div style="padding: 20px;">
+                  <span>Design</span>
+                  <a class="laptop" href="">Make your Marketing website</a>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a class="read_more_css" href="">READ MORE</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div style="position:relative; height:450px;" class="col-12 col-sm-6 col-lg-4 LATEST_BLOGS">
+            <div class="laptop">
+              <img class="img-fluid" src="image/laptop/reina-lovefull-WKEEyDKJ8ak-unsplash.jpg" alt="">
+            </div>
+            <div class="designer_content_css">
+              <div style="position: relative; background-color: white; border: 0.25px solid aliceblue;">
+                <h6 class="laptop_date">02 Mar 2023</h6>
+                <div style="padding: 20px;">
+                  <span>Design</span>
+                  <a class="laptop" href="">Make your Marketing website</a>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                  <a class="read_more_css" href="">READ MORE</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+    </section>
+  </section>
+  <section id="ABOUTME" class="container_css">
+    <div class="container ABOUT_ME_css">
+      <h3>GET IN TOUCH</h3>
+      <p>A LEAD UX & UI DESIGNER BASED IN CANADA</p>
+      <div class="mt-5">
+        <div class="row gy-3 gx-4">
+          <div class="col-lg-8">
+            <div class=" bg-white p-3">
+              <h4 class="say_css">Say Something</h4>
+              <form action="">
+                <div class="row gy-5 gx-5">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input name="name" id="name" placeholder="Name *" type="text" value="" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <input name="email" id="email" placeholder="Email *" type="email" value="" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <input name="subject" id="subject" placeholder="Subject *" type="text" value="" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <textarea style="height: 72px;" name="message" id="message" cols="30" rows="10"
+                        placeholder="Your message *"></textarea>
+                    </div>
+                  </div>
+                  <div class="send">
+                    <input class="send_message_css" type="submit" value="send message" required></input>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="d-flex align-items-center gap-2 bg-white p-3 mb-2">
+              <div class="location_icon">
+                <i class="d-flex fa-solid fa-earth-asia "></i>
+              </div>
+              <div>
+                <h6>Our Address</h6>
+                <p>123 Stree New York City , United States Of America 750065.</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 bg-white p-3 mt-2 mb-2">
+              <div class="location_icon">
+                <i class="fa-solid fa-mobile-screen"></i>
+              </div>
+              <div>
+                <h6>Our Phone</h6>
+                <p>Office: +004 44444 44444 <br>
+                  Office: +004 44444 44444</p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-2 bg-white p-3 mt-2 mb-2">
+              <div class="location_icon">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <div>
+                <h6>Our Address</h6>
+                <p>123 Stree New York City , United States Of America 750065.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="MY_SKILLS_css footer_css">
+    <div class="container">
+      <div class="row align-items-center justify-content-center pt-3 pb-3">
+        <div class="col-6 col-sm-6 col-lg-6">
+          <div class="wrapper">
+            <div class="hover-fx"><i class="fab fa-instagram"></i></div>
+            <div class="hover-fx"><i class="fab fa-facebook"></i></div>
+            <div class="hover-fx"><i class="fab fa-pinterest"></i></div>
+        </div>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-6 text-end">
+          <p style="font-size: 12px; margin: 0; color: gray;">© 2023 copyright all right reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <!-- icon -->
+  <script src="https://kit.fontawesome.com/c8fa2ade6b.js" crossorigin="anonymous"></script>
+
+  <!-- typewrite effact -->
+  <script>
+    //made by vipul mirajkar thevipulm.appspot.com
+    var TxtType = function (el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function () {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+      var that = this;
+      var delta = 300 - Math.random() * 400;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 100;
+      }
+
+      setTimeout(function () {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function () {
+      var elements = document.getElementsByClassName('typewrite');
+      for (var i = 0; i < elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-type');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtType(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+
+    };
+  </script>
+  <!-- scroll -->
+  <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript">
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+    });
+  </script>
+  <!-- Swiper slider JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+  <script>
+    const swiperEl = document.querySelector('swiper-container')
+    Object.assign(swiperEl, {
+      slidesPerView: 1,
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+
+        },
+        "@0.75": {
+          slidesPerView: 1,
+
+        },
+        "@1.00": {
+          slidesPerView: 2,
+
+        },
+        "@1.50": {
+          slidesPerView: 2,
+
+        },
+      },
+    });
+
+    swiperEl.initialize();
+  </script>
+
+
+
+</body>
+
+</html>
